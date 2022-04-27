@@ -1,5 +1,6 @@
 # NgVideoGameDb
 
+This is an online video game database application that enables users to search and view details of 100,000+ games. Made with crazy visuals and an aesthetic UI, this project uses a public API to create a game database website.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
 
 ## Development server
