@@ -1,0 +1,24 @@
+<mat-card>
+    <form [formGroup] = "form" (submit)="onSavePost()">
+    <mat-form-field>
+        <input 
+        matInput 
+        type="text" 
+        formControlName="name"
+        placeholder="Doctor Name">
+        <mat-error *ngIf="form.get('name').invalid">Please enter Doctor Name.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <textarea 
+        matInput
+        rows='6' 
+        formControlName="specialities"
+        placeholder="Specialities"></textarea>    
+        <mat-error *ngIf="form.get('specialities').invalid">Please enter Specialities.</mat-error>
+    </mat-form-field>
+    <button 
+    color="accent"
+    type="submit"
+    mat-raised-button>Add Doctor Specialities</button>
+</form>
+</mat-card>
