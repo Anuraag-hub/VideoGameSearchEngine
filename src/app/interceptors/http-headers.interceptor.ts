@@ -13,10 +13,10 @@ export class HttpHeadersInterceptor implements HttpInterceptor{
         req = req.clone({
             setHeaders: {
                 "x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
-		        "x-rapidapi-key": "c2233c2216mshe798217c40755d1p194e01jsn1ff9b6ada5d2"
+		        "x-rapidapi-key": *your key*
             },
             setParams: {
-                key: '774f067d15b34f069f200c850ac5b0ae'
+                key: *key*
             }
         });
         return next.handle(req);
